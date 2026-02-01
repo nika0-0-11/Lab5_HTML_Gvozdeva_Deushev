@@ -6,11 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!--Создание простой html-страницы-->
+
     <h1>Лабораторная работа №5</h1>
     <p>Это моя первая HTML-страница, созданная в рамках изучения основ веб-разметки.</p>
 
     <p>test</p>
     <img src="/img/readmePushLab5_Gvozdeva_Deushev.png" title="screenshot">
+
+    <hr />
+
+    <!--Базовые HTML-теги-->
 
     <h2>Это подзаголовок</h2>
     <h3>Подраздел</h3>
@@ -22,11 +29,19 @@
     <p><a href="https://google.com">Перейти на Google</a></p>
     <p><img src="img/ex.png" alt="Картинка не загрузилась"></p>
     
+    <!--Используем базовые теги-->
+
     <h2>Базовые HTML-теги</h2>
     <p>HMTL позволяет <strong>выделить</strong> текст и делать <em>акценты</em>.</p>
     <hr />
     <p><a href="https://github.com/nika0-0-11">Мой Github</a></p>
     <p><img src="img/gitPushLab5_Gvodeva_Deushev.png" alt="Пример изображения"/></p>
+
+    <hr />
+
+    <!--Списки в HTML-->
+
+    <h2>Списки в HTML</h2>
 
     <ol>
         <li>Первый пункт</li>
@@ -50,6 +65,8 @@
 
     <hr />
 
+    <!--Работа со списками-->
+
     <h2>Мои списки</h2>
 
     <ol>Любимые фильмы:
@@ -72,9 +89,9 @@
         </li>
     </ul>
 
-    <!--Атрибуты HTML-элементов-->
-
     <hr />
+
+    <!--Атрибуты HTML-элементов-->
 
     <p id="intro">Это абзац с id</p>
     <p class="highlight">Выделенный текст</p>
@@ -94,17 +111,18 @@
 
     <p><input type="text" placeholder="Введите имя"></p>
 
-    <!--Пример использования атрибутов-->
     <hr />
+
+    <!--Пример использования атрибутов-->
 
     <h2>Пример атрибутов</h2>
     <p id="main-text" class="highlighted" title="Это всплывающая подсказка">Этот абзац содержит id, class и title.</p>
     <p><a href="https://example.com" target="_blank" title="Откроется в новой вкладке">Кликни меня</a></p>
     <p><img src="https://placehold.co/150" alt="Пример изображения" width="150"></p>
 
-    <!--Использование атрибутов-->
-
     <hr />
+
+    <!--Использование атрибутов-->
 
     <h2>Атрибуты HTML</h2>
 
@@ -119,15 +137,125 @@
 
     <p><input type="text" placeholder="Введите ваш город"></p>
 
-    <!--Галерея изображений-->
-
     <hr />
+
+    <!--Галерея изображений-->
 
     <h2>Галерея</h2>
     
     <p><img src="img/readmePushLab5_Gvozdeva_Deushev.png" alt="Error"></p>
         <p><img src="img/ex.png" alt="Error"></p>
         <p><img src="img/basicTagsLab5_Gvozdeva_Deushev.png" alt="Error"></p>    
+
+    <hr />
+
+   <!--Таблицы в HTML-->
+
+    <table border="1">
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+        </tr>
+        <tr>
+            <td>Тимур</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Ника</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <!--Создание таблицы-->
+
+    <h2>Информация обо мне</h2>
+    <table border="2">
+        <tr>
+            <th>ФИО</th>
+            <th>Группа</th>
+            <th>Любимый яп</th>
+            <th>Город</th>
+        </tr>
+        <tr>
+            <td>Гвоздева Вероника Александровна</td>
+            <td>ИСП-231</td>
+            <td>C#</td>
+            <td>Волжский</td>
+        </tr>
+        <tr>
+            <td>Деушев Тимур Тимурович</td>
+            <td>ИСП-231</td>
+            <td>C++</td>
+            <td>Волжский</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <!--Формы и элементы форм (form, input, textarea, select)-->
+
+    <form> ... </form>
+
+    <!--Поле ввода — <input>-->
+
+    <input type="text" placeholder="Введите имя">
+    <input type="email" placeholder="Введите email">
+    <input type="password" placeholder="Введите пароль">
+    <input type="number" placeholder="Введите возраст">
+    <input type="date">
+    <input type="checkbox"> Я согласен
+    <input type="radio" name="gender"> Мужчина
+    <input type="radio" name="gender"> Женщина
+
+    <!--Многострочное поле — <textarea>-->
+
+    <textarea placeholder="Введите сообщение" rows="4"></textarea>
+
+    <!--Выпадающий список — <select>-->
+
+    <select>
+        <option>ИСП-231</option>
+        <option>ИСП-232</option>
+        <option>ИСП-233</option>
+    </select>
+
+    <!--Кнопка — <button>-->
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+
+    <!--Подписанный элемент формы — <label>-->
+    
+    <label for="username">Ваше имя:</label>
+    <input id="username" type="text">
+
+    <hr />
+
+    <!--Пример формы-->
+
+    <h2>Пример HTML-формы</h2>
+    <form>
+        <label for="username">Имя:</label>
+        <input id="username" type="text" placeholder="Введите имя">
+        <br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="example@mail.com">
+        <br><br>
+        <label for="city">Город:</label>
+        <select id="city">
+            <option>Волгоград</option>
+            <option>Волжский</option>
+            <option>Камышин</option>
+        </select>
+        <br><br>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" rows="4" placeholder="Напишите текст..."></textarea>
+        <br><br>
+        <button type="submit">Отправить</button>
+    </form>
+
 
 </body>
 </html>
